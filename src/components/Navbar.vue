@@ -9,7 +9,6 @@
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#contact">Contact</a></li>
-      <li><a href="#resume">Download resume</a></li>
     </ul>
   </nav>
 </template>
@@ -40,18 +39,23 @@ export default {
 
 .nav-links a {
   text-decoration: none;
-  color: inherit;
+  color: white;
   transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: #646cff;
+  color: #60189b;
 }
 
 .logo {
   font-family: "VT323", monospace;
   font-weight: 400;
-  font-style: normal;
   font-size: 40px;
+}
+
+a {
+  font-weight: 500;
+  color: #fafafa;
+  text-decoration: inherit;
 }
 </style>
