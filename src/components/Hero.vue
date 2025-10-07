@@ -1,13 +1,12 @@
 <script setup></script>
 
 <template>
-  <div class="hero">
+  <div class="hero" id="home">
     <div class="hero-content">
-      <h1>Fullstack Developer Essi</h1>
+      <h1>Hi, I'm Essi,</h1>
+      <h2>A Full Stack Developer</h2>
       <div class="links">
-        <button type="button">
-          <i class="fa-solid fa-download"></i> Resume
-        </button>
+        <button type="button"><i class="fa-solid fa-download"></i> CV</button>
         <a
           href="https://fi.linkedin.com/in/essiantola"
           target="_blank"
@@ -30,7 +29,7 @@
 <style scoped>
 .hero {
   width: 100%;
-  height: 80vh;
+  height: 90vh;
   background-image: url("src/assets/hero_background.png");
   background-size: cover;
   display: flex;
