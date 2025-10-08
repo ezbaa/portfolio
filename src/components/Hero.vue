@@ -4,7 +4,7 @@
   <div class="hero" id="home">
     <div class="hero-content">
       <h1>Hi, I'm Essi,</h1>
-      <h2>A Full Stack Developer</h2>
+      <h2>A Fullstack Developer</h2>
       <div class="links">
         <button type="button"><i class="fa-solid fa-download"></i> CV</button>
         <a

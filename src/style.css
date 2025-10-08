@@ -49,9 +49,7 @@ button {
   transition: border-color 0.25s;
   margin: 20px;
 }
-/* button:hover {
-  border-color: #3f0a5e;
-} */
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
