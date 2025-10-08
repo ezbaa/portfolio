@@ -26,7 +26,7 @@
   color: white;
   font-size: 20px;
   position: sticky;
-  top: 0; /* pysyy näytön yläreunassa */
+  top: 0;
   z-index: 1000;
 }
 .center-links {
