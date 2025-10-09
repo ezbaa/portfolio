@@ -1,4 +1,11 @@
-<script setup></script>
+<script setup>
+function downloadCV() {
+  const link = document.createElement("a");
+  link.href = "/CV_EssiAntola.pdf";
+  link.download = "CV_EssiAntola.pdf";
+  link.click();
+}
+</script>
 
 <template>
   <div class="hero" id="home">
@@ -6,20 +13,30 @@
       <h1>Hi, I'm Essi,</h1>
       <h2>A Fullstack Developer</h2>
       <div class="links">
-        <button type="button"><i class="fa-solid fa-download"></i> CV</button>
+        <button type="button" @click="downloadCV">
+          <i class="fa-solid fa-download"></i> CV
+        </button>
         <a
           href="https://fi.linkedin.com/in/essiantola"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-brands fa-linkedin-in fa-xl" style="color: #ffffff"></i>
+          <i
+            class="fa-brands fa-linkedin-in fa-xl"
+            id="icon"
+            style="color: #ffffff"
+          ></i>
         </a>
         <a
           href="https://github.com/ezbaa"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <i class="fa-brands fa-github fa-xl" style="color: #ffffff"></i>
+          <i
+            class="fa-brands fa-github fa-xl"
+            id="icon"
+            style="color: #ffffff"
+          ></i>
         </a>
       </div>
     </div>
@@ -60,7 +77,7 @@ button:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-i:hover {
+#icon:hover {
   transform: translateY(-7px) scale(1.05);
 }
 </style>
