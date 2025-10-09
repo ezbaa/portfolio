@@ -25,4 +25,19 @@
   text-align: left;
   letter-spacing: 0.5px;
 }
+
+@media (max-width: 1024px) {
+  .card {
+    font-size: 18px;
+    padding: 0 2em;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0 1.5em;
+  }
+}
 </style>

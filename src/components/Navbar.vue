@@ -79,4 +79,10 @@ a {
   color: #fafafa;
   text-decoration: inherit;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+}
 </style>

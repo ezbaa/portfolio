@@ -80,4 +80,50 @@ button:hover {
 #icon:hover {
   transform: translateY(-7px) scale(1.05);
 }
+
+@media (max-width: 1024px) {
+  .hero {
+    height: 70vh;
+    font-size: 24px;
+  }
+
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero-content h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    min-height: 50vh;
+    padding: 2em 1em;
+    font-size: 20px;
+  }
+
+  .hero-content {
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+  }
+
+  .hero-content h1,
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .links {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  button {
+    width: 40%;
+    padding: 10px;
+    max-width: 200px;
+  }
+}
 </style>
