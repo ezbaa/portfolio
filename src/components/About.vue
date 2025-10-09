@@ -23,5 +23,6 @@
   max-width: 80ch;
   margin: 0 auto;
   text-align: left;
+  letter-spacing: 0.5px;
 }
 </style>
