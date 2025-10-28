@@ -47,7 +47,7 @@ function downloadCV() {
 .hero {
   width: 100%;
   height: 90vh;
-  background-image: url("src/assets/hero_background.png");
+  background-image: url("/hero_background.png");
   background-size: cover;
   display: flex;
   justify-content: center;
