@@ -1,8 +1,8 @@
 <script setup>
 function downloadCV() {
   const link = document.createElement("a");
-  link.href = "/CV_EssiAntola.pdf";
-  link.download = "CV_EssiAntola.pdf";
+  link.href = "/CV_Portfolio.pdf";
+  link.download = "CV_Portfolio.pdf";
   link.click();
 }
 </script>
