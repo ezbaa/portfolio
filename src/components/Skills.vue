@@ -1,7 +1,6 @@
 <template>
   <section class="tech-stack" id="tech-stack">
     <h2>Tech Stack</h2>
-    <p>Here are some of the tools I use to build and deploy applications</p>
 
     <div class="category">
       <h3>Frontend</h3>

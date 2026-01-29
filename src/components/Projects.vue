@@ -22,15 +22,22 @@ import ProjectCard from "./ProjectCard.vue";
 const projects = [
   {
     title: "Portfolio Website",
-    description: "My personal porftolio",
+    description: "Personal portfolio website built as a modern frontend application and deployed as a containerized service. The project focuses on clean UI, maintainable code, and production-like deployment practices.",
     image: "/portfolio.png",
     techStack: ["Vue.js"],
     githubUrl: "https://github.com/ezbaa/portfolio",
   },
   {
+    title: "GitOps",
+    description: "This repository contains the GitOps configuration used to deploy and operate my portfolio website on a Kubernetes cluster.",
+    image: "workflow.png",
+    techStack: ["Docker", "Kubernetes", "FluxCD"],
+    githubUrl: "https://github.com/ezbaa/GitOps",
+  },
+  {
     title: "Dev news Slack bot",
     description:
-      "A bot that posts daily developer news to a Slack channel using Dev.to API. The project uses Python, Slack webhooks, and GitHub Actions for scheduling",
+      "A bot that posts daily developer news to a Slack channel using Dev.to API. The project uses Python, Slack webhooks and GitHub Actions for scheduling.",
     image: "/slack_bot.png",
     techStack: ["Python"],
     githubUrl: "https://github.com/ezbaa/slack-dev-news-bot",
