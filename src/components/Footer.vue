@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <p>© 2025 Essi Antola</p>
+    <p>© 2026 Essi Antola</p>
   </footer>
 </template>
 <script setup></script>

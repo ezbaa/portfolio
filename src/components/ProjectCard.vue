@@ -4,7 +4,7 @@
 
     <h3>{{ title }}</h3>
 
-    <a
+        <a
       class="github-button"
       :href="githubUrl"
       target="_blank"
@@ -13,6 +13,19 @@
       <i class="fa-brands fa-github fa-xl" id="icon" style="color: #ffffff"></i>
       View code
     </a>
+  <div class="action-links">
+    <a
+      v-for ="action in action"
+      :key="action.url"
+      class="action"
+      :href="action.url"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+    <i :class="[`fa-${action.type}`, action.icon]"></i>
+      {{ action.text }} 
+    </a>
+  </div>  
 
     <p class="description">
       {{ description }}
@@ -33,6 +46,7 @@ defineProps({
   image: String,
   techStack: Array,
   githubUrl: String,
+  action: Array,
 });
 </script>
 
@@ -68,8 +82,16 @@ defineProps({
 
 .project-image {
   width: 100%;
+  height: 200px;
+  overflow: hidden;
   border-radius: 12px;
-  margin-bottom: 1rem;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .tech {
@@ -96,6 +118,32 @@ defineProps({
   color: #fff;
   text-decoration: none;
   font-size: 0.95rem;
+}
+.action-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.action:hover{
+  color: #beb0c6;
+}
+
+.action i,
+.github-button i {
+  font-size: 1rem;
 }
 
 .github-button:hover {

@@ -11,6 +11,7 @@
         :image="project.image"
         :techStack="project.techStack"
         :githubUrl="project.githubUrl"
+        :action="project.action"
       />
     </div>
   </section>
@@ -20,16 +21,27 @@
 import ProjectCard from "./ProjectCard.vue";
 
 const projects = [
+    {
+    title: "Food Macro API",
+    description: "A food analysis API that uses a vision LLM to identify dishes and estimate macronutrients from photos. Secured with GitHub OAuth2 authentication and deployed on Kubernetes.",
+    image: "food_macro_api.png",
+    techStack: ["Python", "FastAPI", "Vue.js", "Groq API"],
+    githubUrl: "https://github.com/ezbaa/food-macro-api",
+    action: [
+      { text: "Watch demo", url: "https://www.loom.com/share/329621413ba949b0b04df3e395bacd6c", icon: ["fa-solid", "fa-video"]},
+      { text: "Live site (whitelisted access)", url: "https://essiantola.com/food-macro/", icon: ["fa-solid", "fa-arrow-up-right-from-square"]}
+    ]
+  },
   {
     title: "Portfolio Website",
-    description: "Personal portfolio website built as a modern frontend application and deployed as a containerized service. The project focuses on clean UI, maintainable code, and production-like deployment practices.",
+    description: "Personal portfolio website built with Vue.js, containerized with Docker and deployed on a Kubernetes cluster via GitOps workflow.",
     image: "/portfolio.png",
-    techStack: ["Vue.js"],
+    techStack: ["Vue.js", "Docker", "Kubernetes"],
     githubUrl: "https://github.com/ezbaa/portfolio",
   },
   {
     title: "GitOps",
-    description: "This repository contains the GitOps configuration used to deploy and operate my portfolio website on a Kubernetes cluster.",
+    description: "GitOps configuration for deploying and managing my portfolio on a self-hosted Kubernetes cluster using FluxCD for automated, Git-driven deployments",
     image: "workflow.png",
     techStack: ["Docker", "Kubernetes", "FluxCD"],
     githubUrl: "https://github.com/ezbaa/GitOps",
@@ -37,9 +49,9 @@ const projects = [
   {
     title: "Dev news Slack bot",
     description:
-      "A bot that posts daily developer news to a Slack channel using Dev.to API. The project uses Python, Slack webhooks and GitHub Actions for scheduling.",
-    image: "/slack_bot.png",
-    techStack: ["Python"],
+      "A bot that posts daily developer news to a Slack channel using Dev.to API. For each article, it provides an AI-generated summary.",
+    image: "slack_bot.png",
+    techStack: ["Python", "Groq API", "Dev.to API", "Slack API", "GitHub Actions"], 
     githubUrl: "https://github.com/ezbaa/slack-dev-news-bot",
   },
 ];
